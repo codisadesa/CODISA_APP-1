@@ -10,8 +10,9 @@ public class Stkw002List {
     private String tipoToma;
     private String seccion;
     private String consolidado;
+    private String deposito;
 
-    public Stkw002List(String nroToma, String fechaToma, String familia, String grupo, String area, String dpto, String tipoToma, String seccion, String consolidado) {
+    public Stkw002List(String nroToma, String fechaToma, String familia, String grupo, String area, String dpto, String tipoToma, String seccion, String consolidado, String deposito) {
 
         this.nroToma = nroToma;
         this.fechaToma = fechaToma;
@@ -22,6 +23,8 @@ public class Stkw002List {
         this.tipoToma = tipoToma;
         this.seccion = seccion;
         this.consolidado = consolidado;
+        this.deposito = deposito;
+
      }
     public Stkw002List(){
 
@@ -32,6 +35,17 @@ public class Stkw002List {
     public void setNroToma(String nroToma) {
         this.nroToma = nroToma;
     }
+
+
+    public String getDeposito() {
+        return this.deposito;
+    }
+    public void setDeposito(String deposito) {
+        this.deposito = deposito;
+    }
+
+
+
 
     public String getArea() {
         return this.area;
